@@ -4,7 +4,7 @@ Este proyecto es una página web tutorial que documenta de manera clara y sencil
 
 # 🌐 Demo en línea
 
-Puedes ver el de la aplicacion en GitHub Pages aquí:  
+Puedes ver la pagina en GitHub Pages aquí:  
 👉 [https://jefersonlopezr.github.io/TALLER-EcmaScript/](https://jefersonlopezr.github.io/TALLER-EcmaScript/)  
 
 
@@ -35,5 +35,5 @@ Puedes ver el de la aplicacion en GitHub Pages aquí:
 
 ## Créditos
 
-Trabajo realizado por Jeferson Lopez y Dylan Acevedo como parte de una investigación sobre ECMAScript.
+Trabajo realizado por **Jeferson Lopez** y **Dylan Acevedo** como parte de una investigación sobre ECMAScript.
 
