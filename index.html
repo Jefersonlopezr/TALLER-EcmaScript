@@ -2,48 +2,237 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 </head>
 
 <body>
+    <header>
+        <h1>📘 Guía Completa de ECMAScript</h1>
+        <nav>
+            <ul>
+                <li><a href="#que-es">¿Qué es ECMAScript?</a></li>
+                <li><a href="#versiones">Versiones</a></li>
+                <li><a href="#uso">¿Cómo se usa?</a></li>
+                <li><a href="#diferencias">Diferencias clave</a></li>
+                <li><a href="#conclusion">Conclusión</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <body>
-        <header>
-            <h1>📘 Guía Completa de ECMAScript</h1>
-            <nav>
-                <ul>
-                    <li><a href="#que-es">¿Qué es ECMAScript?</a></li>
-                    <li><a href="#versiones">Versiones</a></li>
-                    <li><a href="#uso">¿Cómo se usa?</a></li>
-                    <li><a href="#diferencias">Diferencias clave</a></li>
-                </ul>
-            </nav>
-        </header>
 
-        <section id="que-es">
-            <h2>¿Qué es ECMAScript?</h2>
+    <section id="que-es">
+        <h2>¿Qué es ECMAScript?</h2>
+        <p>
+            <strong>ECMAScript</strong> es el estándar creado por
+            <strong>ECMA International</strong> para definir cómo debe funcionar el
+            lenguaje JavaScript. Gracias a esta especificación, todos los
+            navegadores y entornos pueden ejecutar código JavaScript de manera
+            coherente.
+        </p>
+        <p>
+            JavaScript es el lenguaje basado en esta especificación. Las nuevas
+            versiones de ECMAScript introducen mejoras de sintaxis, nuevas
+            funcionalidades, y correcciones que hacen que el desarrollo web sea más
+            potente y moderno.
+        </p>
+    </section>
+
+    <section id="uso">
+        <h2>¿Cómo se utiliza ECMAScript?</h2>
+        <p>
+            ECMAScript se usa escribiendo JavaScript moderno en navegadores o
+            editores. Las funciones más recientes pueden necesitar herramientas como
+            <strong>Babel</strong> o <strong>Webpack</strong> para ser compatibles
+            con navegadores antiguos.
+        </p>
+    </section>
+    <section id="versiones">
+        <h2>Versiones de ECMAScript</h2>
+
+        <article>
+            <h3>馃敼 ECMAScript 1 (1997)</h3>
+            <p>Primera version estandarizada del lenguaje.</p>
+            <pre><code>// Ejemplo básico de ES1
+var x = 10;
+if (x > 5) {
+  alert('x es mayor que 5');
+}</code></pre>
+
+        <article>
+            <h3>馃敼 ECMAScript 2 (1998)</h3>
+            <p>Pequeñas actualizaciones para alinear con el estandar ISO.</p>
+        </article>
+
+        <article>
+            <h3>馃敼 ECMAScript 3 (1999)</h3>
+            <ul>
+                <li>Expresiones Regulares.</li>
+                <li>Manejo de excepciones.</li>
+                <li>Mejoras en operadores.</li>
+            </ul>
+            <pre><code>// Try/Catch en ES3
+try {
+  undefinedFunction();
+} catch(e) {
+  console.log('Error: ' + e.message);
+}</code></pre>
+        </article>
+
+
+        </article>
+
+        <article>
+            <h3>馃敼 ECMAScript 5 (2009)</h3>
             <p>
-                <strong>ECMAScript</strong> es el estándar creado por <strong>ECMA International</strong> para definir
-                cómo debe funcionar el lenguaje JavaScript. Gracias a esta especificación, todos los navegadores y
-                entornos pueden ejecutar código JavaScript de manera coherente.
+                Incluye <code>strict mode</code>, m茅todos de arrays como
+                <code>forEach</code> y <code>JSON</code>.
             </p>
+            <pre><code>"use strict";
+[1, 2, 3].forEach(function(n) {
+  console.log(n);
+});</code></pre>
+        </article>
+
+        <article>
+            <h3>馃敼 ES6 / ES2015</h3>
             <p>
-                JavaScript es el lenguaje basado en esta especificación. Las nuevas versiones de ECMAScript introducen
-                mejoras de sintaxis, nuevas funcionalidades, y correcciones que hacen que el desarrollo web sea más
-                potente y moderno.
+                Una de las mayores actualizaciones. Introdujo <code>let</code>,
+                <code>const</code>, funciones flecha, clases, template strings y m谩s.
             </p>
+            <pre><code>const nombre = "Juan";
+console.log(`Hola, ${nombre}`);
+const suma = (a, b) => a + b;</code></pre>
+        </article>
+
+        <article>
+            <h3>馃敼 ES2016 (ES7)</h3>
+            <p>
+                Se agregaron el operador de exponenciaci贸n y <code>includes</code> en
+                arrays.
+            </p>
+            <pre><code>console.log(2 ** 3); // 8
+console.log([1, 2, 3].includes(2)); // true</code></pre>
+        </article>
+
+        <article>
+            <h3>馃敼 ES2017 (ES8)</h3>
+            <p>Introdujo <code>async/await</code> y <code>Object.entries</code>.</p>
+            <pre><code>async function saludar() {
+  return "Hola";
+}
+saludar().then(console.log);</code></pre>
+        </article>
+
+        <article>
+            <h3>馃敼 ES2018 (ES9)</h3>
+            <p>
+                Soporte para rest/spread en objetos y m茅todo <code>finally</code> en
+                promesas.
+            </p>
+            <pre><code>const obj = { a: 1, b: 2 };
+const copia = { ...obj };</code></pre>
+        </article>
+
+        <article>
+            <h3>馃敼 ES2019</h3>
+            <p>
+                Se agregaron <code>flat</code> y <code>flatMap</code> a los arrays.
+            </p>
+            <pre><code>[1, [2, [3]]].flat(2); // [1, 2, 3]</code></pre>
+        </article>
+
+        <article>
+            <h3>馃敼 ES2020</h3>
+            <p>
+                Incluy贸 <code>Optional Chaining</code> y
+                <code>Nullish Coalescing</code>.
+            </p>
+            <pre><code>const usuario = {};
+console.log(usuario?.perfil?.nombre ?? "Desconocido");</code></pre>
+        </article>
+
+        <article>
+            <h3>馃敼 ES2021</h3>
+            <p>
+                Agreg贸 <code>Logical Assignment</code> y
+                <code>String.replaceAll</code>.
+            </p>
+            <pre><code>let texto = "hola mundo mundo";
+console.log(texto.replaceAll("mundo", "馃實"));</code></pre>
+        </article>
+
+        <article>
+            <h3>馃敼 ES2022</h3>
+            <p>
+                Incluye <code>at()</code> para arrays y soporte para
+                <code>top-level await</code>.
+            </p>
+            <pre><code>const letras = ['a', 'b', 'c'];
+console.log(letras.at(-1)); // "c"</code></pre>
+        </article>
+
+        <article>
+            <h3>馃敼 ES2023</h3>
+            <p>
+                Nuevas funciones en <code>Array</code> como <code>findLast</code> y
+                mejoras en <code>Symbol</code>.
+            </p>
+            <pre><code>const arr = [1, 2, 3, 4];
+console.log(arr.findLast(n => n < 4)); // 3</code></pre>
+        </article>
+
+        <article>
+            <h3>馃敼 ES2024 (Propuesta)</h3>
+            <p>
+                Se esperan mejoras en <code>Observables</code> y
+                <code>Temporal</code> para manejo de fechas.
+            </p>
+            <p><em>Requiere herramientas experimentales para su uso actual.</em></p>
+        </article>
+    </section>
+
+    <section id="diferencias">
+            <h2>Diferencias notorias entre versiones</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Versi贸n</th>
+                        <th>Caracter铆sticas clave</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ES5</td>
+                        <td>Strict mode, JSON, forEach</td>
+                    </tr>
+                    <tr>
+                        <td>ES6</td>
+                        <td>let/const, arrow functions, clases, import/export</td>
+                    </tr>
+                    <tr>
+                        <td>ES7鈥揈S10</td>
+                        <td>includes, exponentiation, async/await, spread</td>
+                    </tr>
+                    <tr>
+                        <td>ES11鈥揈S14</td>
+                        <td>Optional chaining, at(), top-level await</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
 
-        <section id="uso">
-            <h2>¿Cómo se utiliza ECMAScript?</h2>
-            <p>
-                ECMAScript se usa escribiendo JavaScript moderno en navegadores o editores. Las funciones más recientes
-                pueden necesitar herramientas como <strong>Babel</strong> o <strong>Webpack</strong> para ser
-                compatibles con navegadores antiguos.
-            </p>
-        </section>
-    </body>
+    <section id="conclusion">
+        <h2>Conclusión</h2>
+        <p>
+            <strong>ECMAScript</strong> evoluciona constantemente, añadiendo características
+             que hacen a JavaScript más potente y fácil de usar. Mantenerse actualizado con las 
+             nuevas versiones permite escribir código más limpio y eficiente.
+        </p>
+
+    </section>
+
+</body>
 
 </html>
