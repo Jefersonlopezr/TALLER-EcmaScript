@@ -137,6 +137,46 @@ footer {
     margin-left: 50px;
 }
 
+#que-es{
+    box-shadow: #14532d;
+}
+
+#que-es:hover{
+    box-shadow: 0 0 10px #14532d;
+}
+
+#uso{
+    box-shadow: #14532d;
+}
+
+#uso:hover{
+    box-shadow: 0 0 10px #14532d;
+}
+
+#versiones{
+    box-shadow: #14532d;
+}
+
+#versiones:hover{
+    box-shadow: 0 0 10px #14532d;
+}
+
+#diferencias{
+    box-shadow: #14532d;
+}
+
+#diferencias:hover{
+    box-shadow: 0 0 10px #14532d;
+}
+
+#conclusion{
+    box-shadow: #14532d;
+}
+
+#conclusion:hover{
+    box-shadow: 0 0 10px #14532d;
+}
+
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
